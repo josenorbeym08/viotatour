@@ -15,7 +15,7 @@ from django.utils import timezone
 
 
 now = timezone.now()
-import pytz
+#import pytz
 #from auditlog.registry import auditlog
 
 #def url(self,filename):
