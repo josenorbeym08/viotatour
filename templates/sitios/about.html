@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %} Acerca de .... {% endblock %}
+{% block content %}
+
+<h1>Proyecto Vioturismo</h1><br><img src="/media/images/logo.jpg"/>
+<h1>Integrantes de proyecto</h1><br>
+
+<img src="/media/images/jose.jpg"/>
+<h2>Jose Norbey Sanchez Morales</h2>
+<h3>Estudiante de Ingenierìa de Sistemas</h3><br>
+
+<img src="/media/images/betaaa.jpg"/>
+<h2>Alvaro Esteban Betancourt Matoma</h2>
+<h3>Estudiante de Ingenierìa de Sistemas</h3><br>
+<h3>{{ msg }}</h3>
+<p>Version Django: {{version}}</p>
+
+{% endblock %}

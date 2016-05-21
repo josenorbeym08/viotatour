@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %} Agregar Experiencias {% endblock %}
+{% block content %}
+
+	<form action="." method="POST" enctype="multipart/form-data">
+		{% csrf_token %}
+		{{ form.as_p }}
+		<h1> {{experienciaAuditLogEntry.action_id}}</h1><br>
+		<button class="btn btn-primary" type="submit"> Grabar </button>
+		<button class="btn btn-primary" type="reset"> Limpiar </button>
+	</form>
+<br>
+	{{ informacion }}
+<br>
+<a href="/experiencias/page/1/"> Regresar a la lista de Experiencias </a>
+{% endblock %}
