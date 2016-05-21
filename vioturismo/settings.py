@@ -41,7 +41,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 #    'audit_log.middleware.JWTAuthMiddleware',
-    'audit_log.middleware.UserLoggingMiddleware',
+#    'audit_log.middleware.UserLoggingMiddleware',
     
 )
 

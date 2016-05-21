@@ -4,9 +4,9 @@ from django.db import models
 
 from datetime import datetime
 from datetime import date
-from audit_log.models import AuthStampedModel
-from audit_log.models.fields import LastUserField, LastSessionKeyField
-from audit_log.models.managers import AuditLog
+#from audit_log.models import AuthStampedModel
+#from audit_log.models.fields import LastUserField, LastSessionKeyField
+#from audit_log.models.managers import AuditLog
 import datetime
 
 from time import strftime
@@ -48,7 +48,7 @@ class rutaSitio(models.Model):
 	def __unicode__(self):
 		return self.nombre
 
-	audit_log = AuditLog()
+#	audit_log = AuditLog()
 
 
 
@@ -91,7 +91,7 @@ class producto(models.Model):
 
 #'datetime.now'
 #exclude = ['date',]
-	audit_log = AuditLog()
+#	audit_log = AuditLog()
 #auditlog.register(producto)
     
 
@@ -133,7 +133,7 @@ class servicio(models.Model):
 
 	def __unicode__(self):
 		return self.nombre
-	audit_log = AuditLog()
+#	audit_log = AuditLog()
 #auditlog.register(servicio)	
 
 class experiencia(models.Model):
@@ -158,7 +158,7 @@ class experiencia(models.Model):
 	def __unicode__(self):
 		return self.nombre
 
-	audit_log = AuditLog()
+#	audit_log = AuditLog()
 
 #auditlog.register(experiencia)
 

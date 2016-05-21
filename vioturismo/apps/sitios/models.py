@@ -1,7 +1,7 @@
 # coding: utf-8
 from django.db import models
 from django.contrib.auth.models import User
-from audit_log.models.managers import AuditLog
+#from audit_log.models.managers import AuditLog
 import datetime
 from datetime import date
 from django.utils import timezone
@@ -43,7 +43,7 @@ class userProfile(models.Model):
 	def __unicode__(self):
 		return self.user.username
 
-	audit_log = AuditLog()
+#	audit_log = AuditLog()
 
 
 #class Setting(models.Model):
