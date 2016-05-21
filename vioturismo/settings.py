@@ -73,27 +73,28 @@ WSGI_APPLICATION = 'vioturismo.wsgi.application'
 
 
 #if MOTOR_DB == 'mysql':
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.mysql',
+#        'NAME': 'vio',
+#        'USER': 'root',                      # Nol at used with sqlite3.
+#        'PASSWORD': 'root',                  # Not used with sqlite3.
+#        'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
+#        'PORT': '',  
+#    }
+#}
+
+#if MOTOR_DB == 'sqlite':
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'vio',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(os.path.dirname(__file__),'vio.db'),
         'USER': 'root',                      # Nol at used with sqlite3.
         'PASSWORD': 'root',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '',  
     }
 }
-#if MOTOR_DB == 'sqlite':
-#    DATABASES = {
-#       'default': {
-#           'ENGINE': 'django.db.backends.sqlite3',
-#           'NAME': os.path.join(os.path.dirname(__file__),'vio.db'),
-#           'USER': 'root',                      # Nol at used with sqlite3.
-#           'PASSWORD': 'root',                  # Not used with sqlite3.
-#           'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
-#           'PORT': '',  
-#       }
-#   }
 
 
 
