@@ -4,7 +4,7 @@ $(function(){
 		navigator.geolocation.getCurrentPosition(getCoords, getError);
 	}else {
 
-		initialize(4.439361, -74.522422);
+		initialize(4.435210, -74512388);
 	   
 
 	}
